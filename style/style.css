@@ -201,7 +201,7 @@ footer {
 }
 
 @media (min-width: 1020px) {
-    main {
+    .main__index {
         display: flex;
         flex-direction: row-reverse;
         flex: 1;
@@ -216,14 +216,14 @@ footer {
     .main__log h1 {
         font-size: 8.8rem;
     }
-    aside {
+    .aside__father {
         flex: 1;
     }
     .main__aside {
         height: 100%;
         width: 100%;
     }
-    body {
+    .body__index {
         display: flex;
         flex-direction: column;
         height: 100vh;
