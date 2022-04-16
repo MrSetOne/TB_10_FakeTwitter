@@ -65,7 +65,8 @@ html {
 
 .signup__item,
 .log__signup>p,
-.signup__o {
+.signup__o,
+.login__btn {
     max-width: 30rem;
 }
 
@@ -124,6 +125,7 @@ html {
 
 .log__login {
     margin-top: 5.6rem;
+    width: 100%;
 }
 
 .log__login h3 {
@@ -133,6 +135,8 @@ html {
 .login__btn {
     background-color: transparent;
     border: 1px solid #536471;
+    width: 100%;
+    margin-top: 2rem;
 }
 
 .login__btn a {
@@ -185,4 +189,47 @@ footer {
     color: #71767b;
     font-size: 1.3rem;
     text-align: center;
+}
+
+@media (min-width: 520px) {
+    .main__log h1 {
+        font-size: 7.4rem;
+    }
+    .main__log h2 {
+        font-size: 4.3rem;
+    }
+}
+
+@media (min-width: 1020px) {
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        flex: 1;
+    }
+    .main__log {
+        width: 86.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .main__log h1 {
+        font-size: 8.8rem;
+    }
+    aside {
+        flex: 1;
+    }
+    .main__aside {
+        height: 100%;
+        width: 100%;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+    }
+    .main__aside i {
+        font-size: min(25vw, 35rem);
+    }
 }
