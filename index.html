@@ -8,6 +8,9 @@
     <script src="https://kit.fontawesome.com/c569a510c1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <title>Twitter. Es lo que está pasando. / Twitter</title>
 </head>
 
@@ -18,29 +21,37 @@
             <h1>Lo que está pasando ahora</h1>
             <h2>Únete a Twitter hoy mismo</h2>
             <div class="log__signup">
-                <a class="signup__item" href="./main.html">
-                    <img src="./assets/google_logo.svg" alt="Registrate con google">
-                    <p>Registrarse con Google</p>
-                </a>
-                <a class="signup__item" href="./main.html">
-                    <i class="fa-brands fa-apple"></i>
-                    <p>Registrarse con Apple</p>
-                </a>
+                <div class="signup__item">
+                    <a href="./main.html">
+                        <img src="./assets/google_logo.svg" alt="Registrate con google">
+                        <p>Registrarse con Google</p>
+                    </a>
+                </div>
+                <div class="signup__item">
+                    <a href="./main.html">
+                        <i class="fa-brands fa-apple"></i>
+                        <p>Registrarse con Apple</p>
+                    </a>
+                </div>
                 <div class="signup__o">
                     <div class="o__decoration"></div>
                     <p>O</p>
                     <div class="o__decoration"></div>
                 </div>
-                <a class="signup__item singup__item--phone" href="./main.html">
-                    <p>Registrate con el numero de telefono</p>
-                </a>
+                <div class="signup__item signup__item--phone">
+                    <a href="./main.html">
+                        <p>Registrate con el numero de telefono</p>
+                    </a>
+                </div>
                 <p>Al registrarte, aceptas los <a href="https://twitter.com/tos" target="_blank" rel="noopener noreferrer">Términos de servicio</a> y la
                     <a href="https://twitter.com/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad</a>, incluida la política de <a href="http://" target="_blank" rel="noopener noreferrer">Uso de Cookies</a>.
                 </p>
             </div>
             <div class="log__login">
                 <h3>¿Ya tienes una cuenta?</h3>
-                <a href="./main.html">Iniciar sesión</a>
+                <div class="signup__item login__btn">
+                    <a href="./main.html">Iniciar sesión</a>
+                </div>
             </div>
         </article>
         <aside class="main__aside">
