@@ -4,3 +4,5 @@
 
 - [ ] Hovers
 
+- [ ] "Mas opciones" menu
+

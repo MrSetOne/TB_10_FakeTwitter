@@ -36,7 +36,7 @@ html {
 }
 
 .main__log i {
-    font-size: 1.5rem;
+    font-size: 4rem;
 }
 
 .main__log>h1 {
@@ -232,4 +232,8 @@ footer {
     .main__aside i {
         font-size: min(25vw, 35rem);
     }
+}
+
+.interface__nav .nav__item svg {
+    width: 10rem;
 }
