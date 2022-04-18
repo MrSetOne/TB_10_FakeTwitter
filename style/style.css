@@ -354,6 +354,8 @@ footer {
     display: flex;
     width: 100%;
     gap: 2rem;
+    padding: 2rem;
+    border-bottom: var(--darkgrey) 1px solid;
 }
 
 .write__logo {
@@ -369,18 +371,85 @@ footer {
     flex: 1;
 }
 
-.write__input textarea {
-    width: 100%;
-    font-size: 2rem;
-    resize: none;
-    background-color: transparent;
-    border: none;
-    color: var(--blanco);
-    overflow: auto;
-}
-
 .write__input svg {
     fill: var(--blanco)
+}
+
+.input__text {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: vertical;
+    min-height: 40px;
+    line-height: 30px;
+    color: var(--blanco);
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.input__text:focus {
+    outline: none;
+}
+
+.input__text[contenteditable]:empty::before {
+    content: "¿Que está pasando?";
+    color: gray;
+}
+
+.input__who {
+    display: flex;
+    gap: .1rem;
+    align-items: center;
+}
+
+.input__who * {
+    color: var(--bluetwitter);
+    fill: var(--bluetwitter);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.input__who svg {
+    height: 1.4rem;
+}
+
+.write__input {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--darkgrey);
+}
+
+.write__menu svg {
+    fill: var(--bluetwitter);
+    width: 2rem;
+}
+
+.write__menu svg:nth-child(3),
+.write__menu svg:nth-child(5) {
+    display: none;
+}
+
+.write__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    padding-bottom: 0;
+}
+
+.write__tools {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.write__menu input {
+    border: none;
+    background-color: var(--bluetwitter);
+    padding: 1rem 1.6rem;
+    border-radius: 3rem;
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
 
