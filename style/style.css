@@ -2,6 +2,7 @@
     --negro: #000000;
     --blanco: #ffffff;
     --bluetwitter: #1d9bf0;
+    --darkgrey: #3a3a3a;
 }
 
 
@@ -13,6 +14,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    list-style: none;
 }
 
 *,
@@ -234,6 +236,86 @@ footer {
     }
 }
 
-.interface__nav .nav__item svg {
-    width: 10rem;
+
+/* TAMAÑO DE SVG PROVISIONAL */
+
+.interface__nav svg,
+.interface__main svg,
+.interface__aside svg {
+    width: 2.4rem;
+}
+
+.interface {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    background-color: var(--negro);
+}
+
+.interface__aside {
+    display: none;
+}
+
+.interface__header {
+    padding: 1.2rem;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    border-right: #3a3a3a 1px solid;
+}
+
+.interface__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 98%;
+}
+
+.interface__nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav__item svg {
+    fill: var(--blanco);
+}
+
+.nav__item:nth-child(1) svg {
+    width: 3rem;
+}
+
+.nav__item h2 {
+    display: none;
+}
+
+.nav__item:nth-child(3) svg:first-child {
+    display: none;
+}
+
+.nav__item:last-child,
+.nav__item:last-child a,
+.nav__item:last-child div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--bluetwitter);
+}
+
+.nav__item:last-child svg {
+    width: 2.4rem;
+}
+
+.interface__user img {
+    width: 4rem;
+}
+
+.interface__user h3,
+.interface__user h4,
+.interface__user svg {
+    display: none;
 }
