@@ -245,10 +245,14 @@ footer {
     width: 2.4rem;
 }
 
+
+/* Display */
+
 .interface {
     display: grid;
     grid-template-columns: 6rem 1fr;
     background-color: var(--negro);
+    width: 96vw;
 }
 
 .interface__aside {
@@ -262,6 +266,9 @@ footer {
     top: 0;
     border-right: #3a3a3a 1px solid;
 }
+
+
+/* NAV */
 
 .interface__nav {
     display: flex;
@@ -295,7 +302,6 @@ footer {
 }
 
 .nav__item:last-child,
-.nav__item:last-child a,
 .nav__item:last-child div {
     display: flex;
     justify-content: center;
@@ -318,4 +324,68 @@ footer {
 .interface__user h4,
 .interface__user svg {
     display: none;
+}
+
+
+/* MAIN CONTENT */
+
+.main__hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    background-color: #0000008f;
+    position: sticky;
+    top: 0;
+    height: 5.3rem;
+    padding: 1.6rem;
+    width: 100%;
+}
+
+.main__hero h1 {
+    color: var(--blanco);
+}
+
+.main__hero svg {
+    fill: var(--blanco);
+}
+
+.main__write {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.write__logo {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.write__logo img {
+    width: 100%;
+}
+
+.write__body {
+    flex: 1;
+}
+
+.write__input textarea {
+    width: 100%;
+    font-size: 2rem;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    color: var(--blanco);
+    overflow: auto;
+}
+
+.write__input svg {
+    fill: var(--blanco)
+}
+
+
+/* Para maquetacion */
+
+.article__container img {
+    width: 20rem;
 }
