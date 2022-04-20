@@ -579,6 +579,11 @@ footer {
         flex-direction: column;
         padding: 0 2rem;
     }
+    .search__background {
+        position: sticky;
+        top: 0;
+        background-color: var(--negro);
+    }
     .aside__search {
         height: 5.3rem;
         display: flex;
@@ -608,21 +613,26 @@ footer {
         fill: var(--midgrey);
         width: 1.8rem;
     }
-    .aside__news {
+    .aside__news,
+    .aside__whofollows {
         background-color: var(--darknestgrey);
         display: flex;
         flex-direction: column;
         border-radius: 2rem;
         margin-top: 1rem;
     }
-    .aside__news * {
+    .aside__news *,
+    .aside__whofollows h2 {
         color: var(--blanco);
     }
-    .aside__news h3 {
+    .aside__news h3,
+    .aside__whofollows h2 {
         font-size: 2rem;
     }
     .aside__news h3,
-    .news__article {
+    .news__article,
+    .aside__whofollows h2,
+    .whofollows__item {
         padding: 1.2rem 1.6rem;
     }
     .news__article {
@@ -675,5 +685,58 @@ footer {
         padding: 1.6rem;
         color: var(--bluetwitter);
         font-size: 1.5rem;
+    }
+    .whofollows__item img {
+        width: 4.8rem;
+        height: 4.8rem;
+        object-fit: cover;
+    }
+    .whofollows__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .whofollows__item img {
+        border-radius: 50%;
+    }
+    .whofollows__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .whofollows__info * {
+        font-size: 1.5rem;
+    }
+    .whofollows__info h3 {
+        color: var(--blanco);
+    }
+    .whofollows__info p {
+        color: var(--midgrey);
+    }
+    .whofollows__follow {
+        background-color: var(--blanco);
+        padding: 1rem 1.6rem;
+        font-size: 1.4rem;
+        border-radius: 23rem;
+        font-weight: 700;
+    }
+    .aside__footer {
+        padding: 1.2rem 1.6rem;
+        position: sticky;
+        top: 33rem;
+    }
+    .aside__footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem 1rem;
+    }
+    .footer__item * {
+        font-size: 1.3rem;
+        color: var(--midgrey);
+    }
+    .aside__whofollows {
+        position: sticky;
+        top: 6rem
     }
 }
