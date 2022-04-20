@@ -560,6 +560,10 @@ footer {
     .interface__nav {
         margin-right: 1.2rem;
     }
+    .write__menu svg:nth-child(3),
+    .write__menu svg:nth-child(5) {
+        display: unset;
+    }
 }
 
 @media (min-width: 1020px) {
