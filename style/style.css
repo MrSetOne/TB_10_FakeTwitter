@@ -740,3 +740,11 @@ footer {
         top: 6rem
     }
 }
+
+@media (min-width:1110px) {
+    .interface {
+        grid-template-columns: 6rem 1fr 38rem;
+        width: 105rem;
+        margin: 0 auto;
+    }
+}
