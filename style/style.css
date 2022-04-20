@@ -604,4 +604,72 @@ footer {
         fill: var(--midgrey);
         width: 1.8rem;
     }
+    .aside__news {
+        background-color: var(--darknestgrey);
+        display: flex;
+        flex-direction: column;
+        border-radius: 2rem;
+        margin-top: 1rem;
+    }
+    .aside__news * {
+        color: var(--blanco);
+    }
+    .aside__news h3 {
+        font-size: 2rem;
+    }
+    .aside__news h3,
+    .news__article {
+        padding: 1.2rem 1.6rem;
+    }
+    .news__article {
+        display: flex;
+        justify-content: space-between;
+    }
+    .news__text {
+        display: flex;
+        flex-direction: column;
+    }
+    .news__title {
+        display: flex;
+        gap: 1.5rem;
+    }
+    .news__title p {
+        font-size: 1.3rem;
+        color: var(--midgrey)
+    }
+    .news__text h4 {
+        font-size: 1.5rem;
+    }
+    .news__article img {
+        width: 6.8rem;
+        height: 6.8rem;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+    .news__user {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+    }
+    .news__user p {
+        color: var(--blanco);
+        font-weight: 700;
+    }
+    .news__user img {
+        width: 1.6rem;
+        height: 1.6rem;
+        object-fit: cover;
+    }
+    .news__article--trends .news__text p {
+        color: var(--midgrey);
+        font-size: 1.3rem;
+    }
+    .trend__options svg {
+        fill: var(--midgrey)
+    }
+    .aside__news a {
+        padding: 1.6rem;
+        color: var(--bluetwitter);
+        font-size: 1.5rem;
+    }
 }
