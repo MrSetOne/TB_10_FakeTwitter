@@ -681,6 +681,7 @@ footer {
     .news__text {
         display: flex;
         flex-direction: column;
+        gap: .7rem;
     }
     .news__title {
         display: flex;
@@ -785,5 +786,72 @@ footer {
         grid-template-columns: 6rem 1fr 38rem;
         width: 105rem;
         margin: 0 auto;
+    }
+}
+
+@media (min-width: 1300px) {
+    .interface {
+        grid-template-columns: 25rem 1fr 33rem;
+        width: 130rem;
+    }
+    .interface__nav ul {
+        align-items: flex-start;
+    }
+    .nav__item h2 {
+        display: unset;
+        font-size: 2rem;
+        color: var(--blanco);
+        font-weight: 400;
+    }
+    .nav__item {
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .nav__item a {
+        display: flex;
+        gap: 2rem;
+    }
+    .nav__item:last-child {
+        width: 110%;
+        height: 5rem;
+        border-radius: 20rem;
+        max-width: unset;
+    }
+    .nav__item:last-child h2 {
+        font-size: 1.7rem;
+        font-weight: 700;
+        font-stretch: 100%;
+    }
+    .interface__user h3,
+    .interface__user h4,
+    .interface__user svg {
+        display: unset;
+        color: var(--blanco);
+        fill: var(--blanco);
+    }
+    .interface__user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 1rem;
+    }
+    .user__name {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .user__name * {
+        font-size: 1.5rem;
+    }
+    .user__name h4 {
+        font-weight: 400;
+        color: var(--midgrey);
+    }
+    .interface__user svg {
+        width: 3rem;
     }
 }
