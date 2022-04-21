@@ -15,7 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'TwitterChirp', sans-serif;
     list-style: none;
 }
 
@@ -28,6 +28,45 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+}
+
+
+/* IMPORTACION DE FUENTES (GRACIAS A GABO <3) */
+
+@font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/v2/chirp-regular-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/v2/chirp-regular-web.woff) format('woff');
+    font-weight: 400;
+    font-style: 'normal';
+    font-display: 'swap';
+}
+
+@font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/v2/chirp-medium-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/v2/chirp-medium-web.woff) format('woff');
+    font-weight: 500;
+    font-style: 'normal';
+    font-display: 'swap';
+}
+
+@font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/v2/chirp-bold-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/v2/chirp-bold-web.woff) format('woff');
+    font-weight: 700;
+    font-style: 'normal';
+    font-display: 'swap';
+}
+
+@font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/v2/chirp-heavy-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/v2/chirp-heavy-web.woff) format('woff');
+    font-weight: 800;
+    font-style: 'normal';
+    font-display: 'swap';
 }
 
 .main__log {
