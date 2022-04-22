@@ -874,3 +874,8 @@ footer {
 .nav__item div:hover {
     background-color: #ffffff18;
 }
+
+.write__menu input:hover {
+    background-color: #3caaf3;
+    cursor: pointer;
+}
