@@ -788,6 +788,12 @@ footer {
         position: sticky;
         top: 6rem
     }
+    .nav__item:nth-child(3) svg:nth-child(2) {
+        display: none;
+    }
+    .nav__item:nth-child(3) svg:nth-child(1) {
+        display: unset;
+    }
 }
 
 @media (min-width:1110px) {
