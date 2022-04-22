@@ -470,7 +470,9 @@ footer {
 
 .write__menu svg {
     fill: var(--bluetwitter);
-    width: 2rem;
+    width: 3.3rem;
+    padding: .75rem;
+    border-radius: 50%;
 }
 
 .write__menu svg:nth-child(3),
@@ -488,7 +490,7 @@ footer {
 
 .write__tools {
     display: flex;
-    gap: 1.5rem;
+    gap: .5rem;
 }
 
 .write__menu input {
@@ -871,8 +873,10 @@ footer {
     }
 }
 
-.nav__item div:hover {
+.nav__item div:hover,
+.write__tools svg:hover {
     background-color: #ffffff18;
+    cursor: pointer;
 }
 
 .write__menu input:hover {
