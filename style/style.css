@@ -654,9 +654,12 @@ footer {
         padding: 1.2rem;
         flex: 1;
         background-color: transparent;
+        color: var(--blanco);
         border: 0;
-        color: var(--midgrey);
         font-size: 1.5rem;
+    }
+    .search__input input::placeholder {
+        color: var(--midgrey);
     }
     .search__input input:focus {
         outline: none;
@@ -913,4 +916,9 @@ footer {
 .interaction__share:hover * {
     color: #1d9bf0;
     fill: #1d9bf0;
+}
+
+.search__input:focus-within {
+    background-color: #000000;
+    border: var(--bluetwitter) 1px solid;
 }
