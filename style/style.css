@@ -563,7 +563,9 @@ footer {
 
 .container__interaction svg {
     fill: var(--midgrey);
-    height: 1.9rem;
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
 }
 
 .container__interaction p {
@@ -882,4 +884,33 @@ footer {
 .write__menu input:hover {
     background-color: #3caaf3;
     cursor: pointer;
+}
+
+.conatiner__author h5:hover {
+    text-decoration: underline;
+}
+
+.interaction__item:hover svg {
+    background-color: #ffffff18;
+    border-radius: 50%;
+}
+
+.interaction__answer:hover * {
+    color: #1d9bf0;
+    fill: #1d9bf0;
+}
+
+.interaction__retweet:hover * {
+    color: #00ba7c;
+    fill: #00ba7c;
+}
+
+.interaction__like:hover * {
+    color: #f91880;
+    fill: #f91880;
+}
+
+.interaction__share:hover * {
+    color: #1d9bf0;
+    fill: #1d9bf0;
 }
