@@ -858,7 +858,12 @@ footer {
         color: var(--blanco);
         fill: var(--blanco);
     }
+    .interface__user svg {
+        cursor: pointer;
+    }
     .interface__user {
+        padding: 1.2rem;
+        border-radius: 20rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -942,4 +947,8 @@ footer {
 
 .whofollows__follow:hover {
     background-color: #d1d1d1;
+}
+
+.interface__user:hover {
+    background-color: #ffffff18;
 }
