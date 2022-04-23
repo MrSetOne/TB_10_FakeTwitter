@@ -7,3 +7,7 @@
 - [ ] "Mas opciones" menu
 
 - [ ] :focus-within
+
+- [ ] funcion de start
+
+- [ ] responsive en img de start

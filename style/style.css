@@ -952,3 +952,75 @@ footer {
 .interface__user:hover {
     background-color: #ffffff18;
 }
+
+.index__intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffffe3;
+    bottom: 0;
+    right: 0;
+    padding: 5rem;
+    gap: 4rem;
+}
+
+.intro__logos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.intro__logos img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.intro__logos div {
+    width: 52rem;
+    height: .5rem;
+    background-color: var(--negro);
+}
+
+.intro__logos img:last-of-type {
+    height: 10rem;
+    margin-top: -3rem;
+}
+
+.intro__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.index__intro h2 {
+    font-size: 5rem;
+}
+
+.index__intro h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.intro__text a {
+    padding: 1rem 2rem;
+    background-color: var(--bluetwitter);
+    border-radius: 4rem;
+    font-size: 3rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.body__index {
+    overflow: hidden;
+}
