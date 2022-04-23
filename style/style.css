@@ -746,6 +746,7 @@ footer {
         padding: 1.6rem;
         color: var(--bluetwitter);
         font-size: 1.5rem;
+        border-radius: 0 0 2rem 2rem;
     }
     .whofollows__item img {
         width: 4.8rem;
@@ -781,6 +782,7 @@ footer {
         font-size: 1.4rem;
         border-radius: 23rem;
         font-weight: 700;
+        cursor: pointer;
     }
     .aside__footer {
         padding: 1.2rem 1.6rem;
@@ -894,8 +896,11 @@ footer {
     cursor: pointer;
 }
 
-.conatiner__author h5:hover {
+.conatiner__author h5:hover,
+.whofollows__info h3:hover,
+.footer__item:hover a {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .interaction__item:hover svg {
@@ -929,6 +934,12 @@ footer {
 }
 
 .news__article:hover,
-.trend__options:hover {
+.trend__options:hover,
+.aside__news>a:hover,
+.whofollows__item:hover {
     background-color: #ffffff18;
+}
+
+.whofollows__follow:hover {
+    background-color: #d1d1d1;
 }
