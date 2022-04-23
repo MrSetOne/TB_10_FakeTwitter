@@ -11,8 +11,8 @@
     <title>Twitter. Es lo que está pasando. / Twitter</title>
 </head>
 
-<body class="body__index">
-    <div class="index__intro">
+<body class="index" id="index">
+    <div class="index__intro" id="starter">
         <div class="intro__logos">
             <img src="./assets/logopng.png" alt="">
             <div></div>
@@ -21,112 +21,120 @@
         <div class="intro__text">
             <h2>¡¡¡Bienvenido!!!</h2>
             <h3>La pagina que vas a visitar es un clon de twitter.com, está realizada como ejercicio para el bootcamp de fullstack de TheBridge, no se te solicitará ningún tipo de dato personal ni dispone de funcionalidad (Por el momento)</h3>
-            <a>Iniciar</a>
+            <a onclick="start()">Iniciar</a>
+        </div>
+        <div class="intro__git">
+            <h3>Tambien puedes visitar el repositorio en:</h3>
+            <a target="_blank" href="https://github.com/MrSetOne/TB_10_FakeTwitter"><i class="fa-brands fa-github"></i></a>
         </div>
     </div>
-    <main class="main__index">
-        <article class="main__log">
-            <i class="fa-brands fa-twitter"></i>
-            <h1>Lo que está pasando ahora</h1>
-            <h2>Únete a Twitter hoy mismo.</h2>
-            <div class="log__signup">
-                <div class="signup__item">
-                    <a href="./main.html">
-                        <img src="./assets/svg/google_logo.svg" alt="Registrate con google">
-                        <p>Registrarse con Google</p>
-                    </a>
-                </div>
-                <div class="signup__item">
-                    <a href="./main.html">
-                        <i class="fa-brands fa-apple"></i>
-                        <p>Registrarse con Apple</p>
-                    </a>
-                </div>
-                <div class="signup__o">
-                    <div class="o__decoration"></div>
-                    <p>O</p>
-                    <div class="o__decoration"></div>
-                </div>
-                <div class="signup__item signup__item--phone">
-                    <a href="./main.html">
-                        <p>Registrate con el numero de telefono</p>
-                    </a>
-                </div>
-                <p>Al registrarte, aceptas los <a href="https://twitter.com/tos" target="_blank" rel="noopener noreferrer">Términos de servicio</a> y la
-                    <a href="https://twitter.com/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad</a>, incluida la política de <a href="http://" target="_blank" rel="noopener noreferrer">Uso de Cookies</a>.
-                </p>
-            </div>
-            <div class="log__login">
-                <h3>¿Ya tienes una cuenta?</h3>
-                <div class="signup__item login__btn">
-                    <a href="./main.html">Iniciar sesión</a>
-                </div>
-            </div>
-        </article>
-        <aside class="aside__father">
-            <div class="main__aside">
+    <div class="body__index">
+        <main class="main__index">
+            <article class="main__log">
                 <i class="fa-brands fa-twitter"></i>
+                <h1>Lo que está pasando ahora</h1>
+                <h2>Únete a Twitter hoy mismo.</h2>
+                <div class="log__signup">
+                    <div class="signup__item">
+                        <a href="./pages/main.html">
+                            <img src="./assets/svg/google_logo.svg" alt="Registrate con google">
+                            <p>Registrarse con Google</p>
+                        </a>
+                    </div>
+                    <div class="signup__item">
+                        <a href="./pages/main.html">
+                            <i class="fa-brands fa-apple"></i>
+                            <p>Registrarse con Apple</p>
+                        </a>
+                    </div>
+                    <div class="signup__o">
+                        <div class="o__decoration"></div>
+                        <p>O</p>
+                        <div class="o__decoration"></div>
+                    </div>
+                    <div class="signup__item signup__item--phone">
+                        <a href="./pages/main.html">
+                            <p>Registrate con el numero de telefono</p>
+                        </a>
+                    </div>
+                    <p>Al registrarte, aceptas los <a href="https://twitter.com/tos" target="_blank" rel="noopener noreferrer">Términos de servicio</a> y la
+                        <a href="https://twitter.com/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad</a>, incluida la política de <a href="http://" target="_blank" rel="noopener noreferrer">Uso de Cookies</a>.
+                    </p>
+                </div>
+                <div class="log__login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <div class="signup__item login__btn">
+                        <a href="./pages/main.html">Iniciar sesión</a>
+                    </div>
+                </div>
+            </article>
+            <aside class="aside__father">
+                <div class="main__aside">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <div class="footer__container">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://about.twitter.com/">Acerca de</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://help.twitter.com/">Centro de ayuda</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/tos">Condiciones de Servicio</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/privacy">Política de Privacidad</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://support.twitter.com/articles/20170514">Política de cookies</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://help.twitter.com/resources/accessibility">Accesibilidad</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo">Información de anuncios</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://blog.twitter.com/">Blog</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://status.twitterstat.us/">Estado</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://careers.twitter.com/">Empleos</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://about.twitter.com/press/brand-assets">Recursos para marcas</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://ads.twitter.com/?ref=gl-tw-tw-twitter-advertise">Publicidad</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://marketing.twitter.com/">Marketing</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://business.twitter.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness">Twitter para empresas</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://developer.twitter.com/">Desarrolladores</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/i/directory/profiles">Guía</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/settings">Configuración</a>
+                    </li>
+                </ul>
+                <p>© 2022 Twitter, Inc.</p>
             </div>
-        </aside>
-    </main>
-    <footer>
-        <div class="footer__container">
-            <ul>
-                <li>
-                    <a target="_blank" href="https://about.twitter.com/">Acerca de</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://help.twitter.com/">Centro de ayuda</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://twitter.com/tos">Condiciones de Servicio</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://twitter.com/privacy">Política de Privacidad</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://support.twitter.com/articles/20170514">Política de cookies</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://help.twitter.com/resources/accessibility">Accesibilidad</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo">Información de anuncios</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://blog.twitter.com/">Blog</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://status.twitterstat.us/">Estado</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://careers.twitter.com/">Empleos</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://about.twitter.com/press/brand-assets">Recursos para marcas</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://ads.twitter.com/?ref=gl-tw-tw-twitter-advertise">Publicidad</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://marketing.twitter.com/">Marketing</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://business.twitter.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness">Twitter para empresas</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://developer.twitter.com/">Desarrolladores</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://twitter.com/i/directory/profiles">Guía</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://twitter.com/settings">Configuración</a>
-                </li>
-            </ul>
-            <p>© 2022 Twitter, Inc.</p>
-        </div>
-    </footer>
+        </footer>
+
+    </div>
+    <script src="./JS/starter.js"></script>
 </body>
 
 </html>

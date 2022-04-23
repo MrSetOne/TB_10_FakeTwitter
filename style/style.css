@@ -963,9 +963,9 @@ footer {
     height: 100vh;
     background-color: #ffffffe3;
     bottom: 0;
-    right: 0;
     padding: 5rem;
     gap: 4rem;
+    transition: .2s;
 }
 
 .intro__logos {
@@ -978,18 +978,18 @@ footer {
 }
 
 .intro__logos img {
-    height: 15rem;
+    width: min(15rem, 30vw);
     object-fit: cover;
 }
 
 .intro__logos div {
-    width: 52rem;
+    width: min(55rem, 95vw);
     height: .5rem;
     background-color: var(--negro);
 }
 
 .intro__logos img:last-of-type {
-    height: 10rem;
+    width: min(55rem, 95vw);
     margin-top: -3rem;
 }
 
@@ -1019,8 +1019,23 @@ footer {
     color: var(--blanco);
     text-transform: uppercase;
     font-weight: 700;
+    cursor: pointer;
 }
 
-.body__index {
+.index {
     overflow: hidden;
+}
+
+.intro__git {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+
+.intro__git i {
+    font-size: 3rem;
+    color: var(--bluetwitter);
 }
