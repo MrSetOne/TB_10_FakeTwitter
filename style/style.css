@@ -735,6 +735,10 @@ footer {
         color: var(--midgrey);
         font-size: 1.3rem;
     }
+    .trend__options {
+        height: 2.4rem;
+        border-radius: 50%;
+    }
     .trend__options svg {
         fill: var(--midgrey)
     }
@@ -920,6 +924,11 @@ footer {
 }
 
 .search__input:focus-within {
-    background-color: #000000;
+    background-color: var(--negro);
     border: var(--bluetwitter) 1px solid;
+}
+
+.news__article:hover,
+.trend__options:hover {
+    background-color: #ffffff18;
 }

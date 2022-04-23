@@ -6,3 +6,4 @@
 
 - [ ] "Mas opciones" menu
 
+- [ ] :focus-within
