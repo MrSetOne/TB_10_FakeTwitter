@@ -1,20 +1,20 @@
 # TB_10_FakeTwitter
 
 ## Indice
-* Sobre el proyecto
-    * Instalacion y despliegue
-    * Tecnologias usadas
-    * Origen
-    * Objetivo
-* Recursos
-    * Fuentes utilizadas
-    * Inspiracion
-* Retos presentados
-    * Mobile firs
-    * :focus-within
-    * SVG invisibles
-* Siguientes pasos
-* Autor
+* [Sobre el proyecto](#sobre-el-proyecto)
+    * [Instalacion y despliegue](#instalacion-y-despliegue)
+    * [Tecnologias usadas](#tecnologias-usadas)
+    * [Origen](#origen)
+    * [Objetivo](#objetivo)
+* [Recursos](#recursos)
+    * [Fuentes utilizadas](#fuente-utilizada)
+    * [Inspiracion](#inspiracion)
+* [Retos presentados](#retos-presentados)
+    * [Mobile first](#mobile-first)
+    * [:focus-within](#focus-within)
+    * [SVG invisibles](#svg-invisibles)
+* [Siguientes pasos](#proximos-pasos)
+* [Autor](#autor)
 
 
 ## Sobre el proyecto
@@ -80,7 +80,7 @@ Para este proyecto he utilizado la fuente original de Twitter, usando la propied
 La version exacta que hay en el momento de redactar este radme (23/04/2022)
 
 ## Retos presentados
-### Mobile firs
+### Mobile first
 Normalmente trabajo con la metodologia "Desktop firs", pero para esta pagina a modo de reto personal me he forzado a ralizarla basado en "Mobile first", lo cual me ha complicado mas la elaboracion de la pagina.
 
 ### :focus-within
