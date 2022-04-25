@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.icons__container {
+    margin-left: 4rem;
+}
+
+.icons__list {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.icons__list h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.icons__list svg {
+    width: 15rem;
+}
